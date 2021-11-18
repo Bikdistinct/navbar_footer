@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>navbar</title>
+    <style>
+        body{
+            background-image :linear-gradient(315deg, #314594de  0%,  #712ea5cc 74%);
+        }
+       .navbar-right{
+            position: absolute;
+            right: 0px;
+            
+        }
+       
+        .gradient{
+            background-image :linear-gradient(315deg, #314594  0%,  #712ea5 74%);
+        }
+        form{
+            background-color: rgb(52, 52, 59);
+            width: min-content;
+            margin: 5px;
+            margin-left:30%;
+            padding: 10px;
+            border-radius: 10px;
+            color: rgb(125, 134, 134);
+            box-shadow: rgb(250, 250, 250) 3px 4px 2px;
+            font-size: small;
+            
+        }
+        input,textarea{
+            background-color: rgb(95, 94, 93);
+        }
+        @media screen and (max-width:400px) {
+            form{
+            background-color: rgb(52, 52, 59);
+            width: min-content;
+            margin: 5px;
+           margin-left:18%;
+            padding: 10px;
+            border-radius: 10px;
+            color: azure;
+            box-shadow: rgb(250, 250, 250) 3px 4px 2px;
+        } 
+            
+        }
+        .footer{
+            background-image :linear-gradient(315deg,   #712ea5 74%, #314594  0%,);
+            position: relative;
+           bottom: 0px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <!--================================NAVBAR==========================-->
+    <nav class="navbar navbar-expand-lg navbar-light gradient bg-secondary">
+        <a  href="#"><img src="/images/logo.png" height="35cm"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse x" id="navbarNavAltMarkup">
+          <div class="navbar-nav navbar-right ">
+            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Resource Hub</a>
+            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link disabled">About us</a>
+            <a class="nav-link disabled">Members</a>
+            <a class="nav-link disabled">Developers</a>
+          </div>
+        </div>
+      </nav>
+    <!--================================NAVBAR END======================-->
+
+    <!--=================================footer=========================-->
+    <br><footer class=" text-center text-lg-start footer">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Quick Links</h5>
+      
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-dark">Resource Hub</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Messages</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Annual Attractions</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">About us</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-dark">Members</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Developers</a>
+                  </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            
+      
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase" id="btn" tooglehide()>Contact us <p class="mail" onclick="Openform()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg></p></h5> 
+      
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-dark">Email:ecs.nits2022@gmail.com</a>
+                </li>
+                <li>
+                  <p>follow us on:<a href="https://www.facebook.com/groups/ecsnits"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg></a></p>
+                </li>
+                <!--==========form ========================-->
+                <li>
+                    
+                    <form id="form" style="display: none;" action="https://formsubmit.co/674c2c7888284e87ee32216bb4d55528" method="POST" >
+                       <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+                      <div>
+                         <p>Name: <input type="text" for="Full_name" name="name" placeholder="Full_name"></p>
+                        </div>
+                          <div >
+                            
+                           <p>Email_Id: <input type="email" for="Email_id" name="Email" placeholder="name@example.com"></p>
+                          </div>
+                          
+                          <div >
+                            
+                           <p>Message: <textarea for="Messages" name="Messages" rows="3"></textarea></p>
+                          </div>
+                          <button type="submit" class="btn bg-secondary">Submit</button>
+                  
+                        </form>
+                </li>
+                <!--==========================form==========================-->
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0">Version 3.0 Developed by:</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-dark">Abhinav</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Abhishek</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Bikramjit</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Diya</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-dark">Ritwick</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Shayan</a>
+                  </li>
+                  <li>
+                    <h5 class="text-uppercase mb-0">Content by:</h5>
+                  </li>
+                  <li>
+                    
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Urbija</a>
+                  </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-dark" href="#">ECS,NIT Silchar</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    <!--==================================footer end=========================-->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+        function Openform(){
+            document.getElementById('form').style.display='';
+        }
+    </script>
+  </body>
+</html>
