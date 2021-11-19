@@ -51,11 +51,132 @@
             
         }
         .footer{
-            background-image :linear-gradient(315deg,   #712ea5 74%, #314594  0%,);
-            position: relative;
-           bottom: 0px;
+           /* background-image :linear-gradient(315deg,   #712ea5 74%, #314594  0%,);*/
+           background-image :linear-gradient(315deg, #314594  0%,  #712ea5 74%);
         }
-        
+        /* ---------------------image slider-------------------*/
+
+       /*general styles*/
+
+
+
+
+/*slideshow styles*/
+
+.slideshow {
+  width: 625px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: solid 1px white;
+  border-radius: 15px;
+  box-shadow: black 5px 8px 1px;
+}
+
+/*==========responsive===========*/
+@media screen and (max-width:400px){
+  .slideshow {
+  width: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: solid 1px white;
+  border-radius: 15px;
+  box-shadow: black 5px 8px 1px;
+}
+.slideshow-container {
+  width: 250px;
+  font-size: 0;
+  transition: 1s ease;
+  height: 225px;
+}
+.imagesSlide  {
+  width: 250px;
+  height: auto;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+}
+}
+/*===================responsive end==========*/
+.slideshow-container {
+  width: 2500px;
+  font-size: 0;
+  transition: 1s ease;
+  height: 225px;
+}
+
+.slideshow-container:hover {
+  animation-play-state: paused;
+}
+
+.imagesSlide  {
+  width: 625px;
+  height: auto;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+
+
+.para {
+  position: relative;
+  top: -45%;
+  padding: 5px;
+}
+
+.slide {
+  animation: slide 15s ease infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  12.5% {
+    transform: translateX(0%);
+  }
+  
+  25% {
+    transform: translateX(-25%);
+  }
+  
+  37.5% {
+    transform: translateX(-25%);
+  }
+  
+  50% {
+    transform: translateX(-50%);
+  }
+  
+  62.5% {
+    transform: translateX(-50%);
+  }
+  
+  75% {
+    transform: translateX(-75%);
+  }
+  
+  87.5% {
+    transform: translateX(-75%);
+  }
+  
+  99% {
+    transform: translateX(-75%);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.p {
+  margin-top: 140px;
+  text-align: center;
+}
+
+/* -----------slider finish------------*/
     </style>
   </head>
   <body>
@@ -76,8 +197,25 @@
           </div>
         </div>
       </nav>
-    <!--================================NAVBAR END======================-->
+      <br>
 
+    <!--================================NAVBAR END======================-->
+      <!--=============================image slider=====================-->
+     <!-- <div class="card-group"> -->
+        
+        <!--hovering over the images will pause the slideshow -->
+
+<section class="slideshow">
+  <div class="slideshow-container slide">
+    <img class="imagesSlide" src="http://placeimg.com/625/225/any"/>
+    
+    <img class="imagesSlide" src="http://placeimg.com/625/225/animals"/>
+    <img class="imagesSlide" src="http://placeimg.com/625/225/arch"/>
+  </div>
+</section>
+
+ <!--</div>-->
+      <!--=============================image slider end==================-->
     <!--=================================footer=========================-->
     <br><footer class=" text-center text-lg-start footer">
         <!-- Grid container -->
@@ -208,6 +346,7 @@
         </div>
         <!-- Copyright -->
       </footer>
+     
     <!--==================================footer end=========================-->
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -226,6 +365,10 @@
         function Openform(){
             document.getElementById('form').style.display='';
         }
+
+
+        //==========image slider===================
+      
     </script>
   </body>
 </html>
